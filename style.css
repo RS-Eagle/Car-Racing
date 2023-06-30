@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainbox {
+  width: 400px;
+  height: 90vh;
+  background-image: url(img/road.png);
+  background-repeat: repeat-y;
+  /* background-color: aqua; */
+  border: 2px solid black;
+  background-size: cover;
+  animation: ani 5s linear infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100vw;
+  }
+}
+
+.first {
+  /* background-color: black; */
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  position: absolute;
+  top: 340px;
+  right: 42px;
+}
+
+.second {
+  /* background-color: black; */
+  text-align: center;
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: -200px;
+  left: 29px;
+  animation: carmove 2s linear infinite;
+}
+
+.updated {
+  text-align: center;
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: -200px;
+  right: 60px;
+  animation: carmove 2s linear infinite;
+}
+
+.second img,
+.updated img {
+  width: 120%;
+}
+
+img {
+  width: 65%;
+}
+
+@keyframes carmove {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 580px;
+  }
+}
+
+.userupdate {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  position: absolute;
+  top: 340px;
+  left: 42px;
+}
+
+.start {
+  width: 400px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px rgb(104, 104, 104);
+  display: none;
+}
+
+.start h1 {
+  height: 50%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 60px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start button,
+.end button {
+  font-size: 24px;
+  height: 50px;
+  width: 60%;
+  background-color: rgb(100, 202, 100);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.end {
+  width: 400px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px rgb(104, 104, 104);
+}
+
+.end h1,
+.end h2 {
+  height: 20%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 60px;
+}
+
+.end h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+  height: 10%;
+}
